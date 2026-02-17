@@ -32,6 +32,33 @@ graphql(schema, '{ hello }', rootValue).then(result => {
 });
 ```
 
+```json
+### User example
+mutation SignUp($email: String!, $password: String!, $role: String) {
+  signUp(input: { email: $email, password: $password, role: $role }) {
+    email
+    role
+    hashed_password
+    salt
+  }
+}
+
+query GetUser($email: String!) {
+  user(email: $email) {
+    email
+    role
+    hashed_password
+    salt
+  }
+}
+
+query Query {
+  users {
+    email
+    role
+  }
+}
+```
 ## Documentation
 
 For more information, see the [official GraphQL documentation](https://graphql.org/learn/).

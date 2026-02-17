@@ -8,11 +8,13 @@ const schema = buildSchema(`
         salt: String!
     }
     type Query {
-        _: String
+        user(email: String!): User
+        users: [User]
     }
     input UserInput {
         email: String!
         password: String!
+        role: String
     }
     type Mutation {
         signUp(input: UserInput!): User

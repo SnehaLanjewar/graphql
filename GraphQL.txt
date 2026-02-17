@@ -8,3 +8,5 @@ Root: has different root types - Query and mutations
 
 MongoDB always indexes the id fields so it fetches fast
 MongoDB virtual - it actually does not exists
+
+
