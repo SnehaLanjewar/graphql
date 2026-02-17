@@ -1,0 +1,10 @@
+TypeDefs: generic type system
+Query: read only
+Mutations: perform CRUD operation - create, update, delete. 
+Schema: write the query/mutation prototype
+Resolver: going to write the implementation of query and mutations
+Root: has different root types - Query and mutations
+- REST does not have any data type whereas in GQL there is data type. it is implementaiton of Neo4j(graph db). everything is interconnected
+
+MongoDB always indexes the id fields so it fetches fast
+MongoDB virtual - it actually does not exists
